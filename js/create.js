@@ -35,7 +35,8 @@ setTimeout(() => {
 async function post_fetch(url, request) {
         try {
                 let response = await fetch(url, request);
-                window.location = "./read.html";
+                console.log(response);
+                window.location = "read.html";
         } catch (error) {
                 console.log(error);
         }
