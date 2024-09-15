@@ -1,12 +1,13 @@
 const loaderContainer = document.querySelector(".container-load");
-const create = document.querySelector("#create");
-const tableBody = document.querySelector("#tableBody");
-const deleteAll = document.querySelector("#deleteAll");
-
 loaderContainer.className = loaderContainer.className.replace("d-none");
 setTimeout(() => {
     loaderContainer.className += " d-none";
 }, 2500);
+
+const create = document.querySelector("#create");
+const tableBody = document.querySelector("#tableBody");
+const deleteAll = document.querySelector("#deleteAll");
+
 
 create.addEventListener("click", (event) => {
     event.preventDefault();

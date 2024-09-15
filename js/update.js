@@ -1,4 +1,9 @@
 const loaderContainer = document.querySelector(".container-load");
+loaderContainer.className = loaderContainer.className.replace("d-none");
+setTimeout(() => {
+    loaderContainer.className += " d-none";
+}, 2500);
+
 const productName = document.querySelector("#productName");
 const productCode = document.querySelector("#productCode");
 const productImage = document.querySelector("#productImage");
@@ -8,10 +13,6 @@ const productTotal = document.querySelector("#productTotal");
 const from = document.querySelector("#from");
 
 
-loaderContainer.className = loaderContainer.className.replace("d-none");
-setTimeout(() => {
-    loaderContainer.className += " d-none";
-}, 2500);
 
 // it takes id from previous htl page
 let urlParams = new URLSearchParams(window.location.search);

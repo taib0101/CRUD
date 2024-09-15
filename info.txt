@@ -1,0 +1,21 @@
+                                CSS Framework
+-----------------------------------------------------------------------------------------
+1. Milligram, Bootstrap
+
+                                JS Files
+-----------------------------------------------------------------------------------------
+1. Create.js    -> I used button(click) and from(submit) event listener for create items
+2. read.js      -> In the script file read function will execute first
+                -> then get request send to server by fetch
+                -> read the data , then click the delete button , it delete and again call read function
+                -> after clicking update button it will go to update.html by using window.location=./update?id="uniqueID"
+3. update.js    -> in update script constructor URLSearchParams(window.location.search).get("id") 
+                -> and call readPreviousUpdate function fill the input gap, then click submit button and update 
+
+
+
+                                Learned new topic in this project
+--------------------------------------------------------------------------------------------
+1. How load, calling page with parameters , taking parameters , create, read, update, delete , all of things are request part
+2. window.location = ./update?id="uniqueID"
+3. parameter = new URLSearchParams(window.location.search)
